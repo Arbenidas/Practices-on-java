@@ -7,5 +7,5 @@ public interface CocheCRUD {
 
     void imprimir(CocheCRUDImpl datos);
 
-    void findAll(CocheCRUDImpl dato[]);
+    void findAll(List<CocheCRUDImpl> datos,String nombre);
 }

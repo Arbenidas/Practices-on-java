@@ -18,8 +18,8 @@ public class Main {
             System.out.println("---------------Menu---------------");
             System.out.println("1-Agregar un coche");
             System.out.println("2-Mostrar los coches");
-            System.out.println("3-Eliminar algun coche ");
-            System.out.println("4-salir");
+            System.out.println("4-Eliminar algun coche ");
+            System.out.println("5-salir");
             //seleccion del menu
             bandera = Integer.parseInt(scanner.nextLine());
             switch (bandera){
@@ -56,11 +56,18 @@ public class Main {
                     System.out.println("El elemento a sido eliminado correctamente");
                     break;
                 case 4:
+                    System.out.println("Ingrese el nombre del automovil");
+                    String inputs = scanner.nextLine();
+                    for(CocheCRUDImpl coche: coches){
+                        coche.findAll(coches,inputs);
+                    }
+                    break;
+                case 5:
                     System.out.println("Vuelva pronto");
                     bandera =7;
                     break;
             }
 
-        }while (bandera!=7);
+}while (bandera!=7);
     }
 }
