@@ -47,10 +47,12 @@ public class CocheCRUDImpl implements CocheCRUD {
 
     @Override
     public void findAll(List<CocheCRUDImpl>coches, String nombre) {
-    for (CocheCRUDImpl busqueda :coches){
         if (coches.isEmpty()){
             System.out.println("No existen coches en la base de datos");
-        } else if (busqueda.getNombre().equals(nombre)){
+            return;
+        }
+        for (CocheCRUDImpl busqueda :coches){
+        if (busqueda.getNombre().equals(nombre)){
             System.out.println("coche en base de datos");
         }else {
             System.out.println("coche no encontrado");

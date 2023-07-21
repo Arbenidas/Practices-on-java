@@ -18,27 +18,28 @@ public class Main {
             System.out.println("---------------Menu---------------");
             System.out.println("1-Agregar un coche");
             System.out.println("2-Mostrar los coches");
-            System.out.println("4-Eliminar algun coche ");
+            System.out.println("3-Eliminar algun coche ");
+            System.out.println("4-Verificacion de coches");
             System.out.println("5-salir");
             //seleccion del menu
             bandera = Integer.parseInt(scanner.nextLine());
             switch (bandera){
                 case 1:
                     System.out.println("PROGRAMA DE ADMINISTRACION DE COCHES");
-                    CocheCRUDImpl cocheN = new CocheCRUDImpl();
+                    CocheCRUDImpl nuevoCoche = new CocheCRUDImpl();
                     System.out.println("Ingrese el nombre del coche: \n");
-                    cocheN.setNombre(scanner.nextLine());
+                    nuevoCoche.setNombre(scanner.nextLine());
                     System.out.println("Ingrese el modelo del auto: \n");
-                    cocheN.setModelo(scanner.nextLine());
+                    nuevoCoche.setModelo(scanner.nextLine());
                     System.out.println("Ingrese la matricula: \n");
-                    cocheN.setMatricula(scanner.nextLine());
-                    coches.add(cocheN);
+                    nuevoCoche.setMatricula(scanner.nextLine());
+                    coches.add(nuevoCoche);
                     System.out.println("El coche se agrego correctamente");
                     break;
                 case 2:
                     int j=0;
                     for (CocheCRUDImpl coche: coches){
-                        System.out.println("coche #"+(j+1));
+                        System.out.println("coche #"+(j));
                         coche.imprimir(coche);
                         j++;
                     }
@@ -46,7 +47,7 @@ public class Main {
                 case 3:
                     int i =0;
                     for (CocheCRUDImpl coche: coches){
-                        System.out.println("coche #"+(i+1));
+                        System.out.println("coche #"+(i));
                         coche.imprimir(coche);
                         i++;
                     }
