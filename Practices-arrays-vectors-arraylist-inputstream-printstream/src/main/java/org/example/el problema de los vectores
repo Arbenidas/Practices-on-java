@@ -1,0 +1,13 @@
+   Los vectores en si tienen un problema en cuanto a la optimizacion
+   ya que a la hora de agregar datos a un vector inicialmente cuando son cortos
+   no existe esta problematica ya que no requiere tanta potencia de computacion
+   pero cuando son grandes la operacion de aumentar de poco en poco el vector
+   termina siendo un trabajo de copia y pega a un vector mas grande.
+
+   para poder solucionar ese problema de optimizacion al reservar memoria de poco
+   a poco se cambia por un valor mas grande dependiendo de lo que el programa
+   necesita.
+
+   por ejemplo en un programa que agrega usuarios a una "base de datos"
+   en vez de reservar meomoria de poco a poco, que lo haga reservando memoria
+   de 10 en 10 para que sea mas rapido el tener accesos a ellos.
