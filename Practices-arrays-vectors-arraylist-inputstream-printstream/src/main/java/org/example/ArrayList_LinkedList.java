@@ -14,7 +14,8 @@ public class ArrayList_LinkedList {
         arrayList.add("marlon");
         arrayList.add("juan");
         arrayList.add("pedro");
-        //creamos una linked list y le pasam
+        //creamos una linked list y le pasamos un arraylist para que copie
+        //exactamente hacia la linkedlist
         LinkedList<String> linkedList = new LinkedList<>(arrayList);
 
         System.out.println("elementos del arraylist : "+arrayList);

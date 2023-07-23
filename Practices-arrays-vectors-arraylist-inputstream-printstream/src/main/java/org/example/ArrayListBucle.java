@@ -10,11 +10,13 @@ public class ArrayListBucle {
           el ArrayList final. Si te atreves, puedes hacerlo en menos pasos,
           siempre y cuando cumplas el primer "for" de relleno.
          */
+
+        //se crea un arraylist y se le asignan valores
         ArrayList<Integer> arrayEntero =new ArrayList<>();
         for (int i =1; i<11;i++){
             arrayEntero.add(i);
         }
-
+        //Se crea una condicion que elimina los numeros pares del array
         System.out.println("array lleno : "+arrayEntero);
         for (int i =0; i<6;i++){
             if (arrayEntero.get(i)%2 ==0){

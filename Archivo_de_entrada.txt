@@ -1,0 +1,1 @@
+Mensaje que sera copiado entre un archivo y otro.
